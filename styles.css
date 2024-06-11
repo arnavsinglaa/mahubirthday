@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.cake {
+    background-color: #FCC;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.candle {
+    background-color: #FFD700;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.candle:nth-child(1) {
+    left: 50px;
+}
+
+.candle:nth-child(2) {
+    left: 70px;
+}
+
+.candle:nth-child(3) {
+    left: 90px;
+}
+
+h1 {
+    color: #FF1493;
+}
+
+p {
+    color: #333;
+}
+.candle.blow {
+    animation: candleBlow 0.5s ease forwards;
+}
+
+@keyframes candleBlow {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}
